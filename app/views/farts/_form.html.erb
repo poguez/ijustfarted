@@ -1,0 +1,17 @@
+<%= form_for(@fart) do |f| %>
+  <% if @fart.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@fart.errors.count, "error") %> prohibited this fart from being saved:</h2>
+
+      <ul>
+      <% @fart.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
