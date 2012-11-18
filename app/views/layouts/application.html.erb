@@ -3,15 +3,13 @@
 <head>
   <title>Ijustfarted</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
-
+  <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=visualization" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
   <div class="container">
     <%= yield %>
-  </body>
   </div> <!-- /container -->
-  <%= javascript_include_tag "application" %>
-  <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=visualization" %>
 </body>
 </html>
