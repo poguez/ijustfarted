@@ -1,21 +1,11 @@
-<h1>Listing farts</h1>
+<div id="title" class="well well-small above-map">
+  <h1>Global Farts</h1>
+</div>
 
-<table>
-  <tr>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<div id="search-box" class="sidebar above-map">
+  <form class="form-search">
+    <input id="search" class="search-query" type="text">
+  </form>
+</div>
 
-<% @farts.each do |fart| %>
-  <tr>
-    <td><%= link_to 'Show', fart %></td>
-    <td><%= link_to 'Edit', edit_fart_path(fart) %></td>
-    <td><%= link_to 'Destroy', fart, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Fart', new_fart_path %>
+<div id="map_canvas"></div>
