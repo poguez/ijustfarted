@@ -17,8 +17,8 @@ group :assets do
 end
 
 gem 'therubyracer', :platforms => :ruby
+gem "mongoid", "~> 2.4.12"
 gem "geocoder"
-gem "mongoid", "~> 3.0.0"
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
